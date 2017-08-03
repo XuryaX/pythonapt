@@ -96,6 +96,10 @@ find $BUILD_DIR/.apt -type f -ipath '*/pkgconfig/*.pc' | xargs --no-run-if-empty
 
 echo "Python Things now"
 
+start syslog
+
+echo "It should have started now, syslog"
+
 # The Heroku Python Buildpack. This script accepts parameters for a build
 # directory, a cache directory, and a directory for app environment variables.
 
